@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator</title>
+    <link rel="stylesheet" href="webStyle.css">
+</head>
+<body style="background-color:lightcyan;">
+    <div class="navbar">
+       <div class="dropdown">
+        <button class="dropbtn">Course</button>
+        <div class="dropdown-content">
+          <a href="https://gaia.cs.umass.edu/kurose_ross/eighth.php">Kurose & Ross</a>
+          <a href="https://www.w3schools.com/">W3Schools</a>
+          <a href="https://www.geeksforgeeks.org/web-development/">Web Development</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">Browser</button>
+        <div class="dropdown-content">
+          <a href="navigator.html">Navigator</a>
+          <a href="window.html">Window</a>
+          <a href="screen.html">Screen</a>
+          <a href="location.html">Location</a>
+          <a href="geolocation.html">Geolocation</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn">About</button>
+        <div class="dropdown-content">
+          <a href="description.html">Description</a>
+          <a href="contactMe.html">Contact Me</a>
+        </div>
+      </div> 
+    </div>
+    <p id="appName"></p>
+    <script>
+        document.getElementById("appName").innerHTML = 
+        "Browser Application Name: " + "navigator.appName is " + navigator.appName;
+    </script>
+
+    <p id="product"></p>
+    <script>
+    document.getElementById("product").innerHTML =
+    "Browser Engine Product: " + "navigator.product is " + navigator.product;
+    </script>
+
+    <p id="appVersion"></p>
+    <script>
+    document.getElementById("appVersion").innerHTML = "Browser Version: " + navigator.appVersion;
+    </script>
+
+    <p id="userAgent"></p>
+    <script>
+    document.getElementById("userAgent").innerHTML =
+    "Browser User-Agent Header: " + navigator.userAgent;
+    </script>
+
+    <p id="platform"></p>
+    <script>
+    document.getElementById("platform").innerHTML = 
+    "Browser Platform: " +  "navigator.platform is " + navigator.platform;
+    </script>
+
+    <p id="language"></p>
+    <script>
+    document.getElementById("language").innerHTML =
+    "Browser Language: " + "navigator.language is " + navigator.language;
+    </script>
+</body>
+</html>
